@@ -25,3 +25,33 @@ catch (error) {
 finally {
     console.log("Done");
 }
+
+
+// git remote add origin https://github.com/sapienology/the-dominated-domain.git
+// git branch -M main
+// git push -u origin main
+
+// Solve these coding questions in JavaScript, create a repository on GitHub push your answers there and send the link here.
+
+// 1. Find the frequency of elements in array
+
+// 2. Group items on the basis of age of given array of object
+
+// 3.   Program to check a string with balanced brackets.
+
+// 4. Find the nth largest element in a sorted array
+
+// 5. Remove duplicates from an array and return unique values in O(n) complexity.
+
+
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  var filteredList = [];
+  for (var i = 0; i < l.length; i++){
+    if (l[i].constructor.name !== "String"){
+      filteredList.push(l[i]);
+    }
+  }
+  return filteredList;
+}
+console.log(filter_list([1, 2, 3, 'her', 'she', 'them']));
