@@ -55,3 +55,27 @@ function filter_list(l) {
   return filteredList;
 }
 console.log(filter_list([1, 2, 3, 'her', 'she', 'them']));
+
+
+
+function addBinary(a,b) {
+  var c = a + b;
+  var res = '';
+  while (c >= 1) {
+    var res = c % 2 + res;
+    c = Math.floor(c / 2);
+  }
+  return res;
+}
+console.log(addBinary(4, 7));
+
+function addbinary(a, b) {
+    let sum = a + b;
+    let x = '';
+    while (sum >= 1) {
+        let x = sum % 2 + x;
+        sum = Math.floor( sum / 2);
+    }
+    return x;
+}
+console.log(addbinary(2, 7));
